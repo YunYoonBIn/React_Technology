@@ -1,0 +1,24 @@
+import PropTypes from 'prop-types'; 
+
+const MyComponent = ({ name, children, favoriteNumber }) => {
+  return (
+    <div>
+      안녕하세요 제 이름은 {name} 입니다.
+      <br />
+      children 값은 {children}입니다.
+      <br />
+      제가 좋아하는 숫자는 {favoriteNumber}
+    </div>
+  );
+}; 
+
+MyComponent.defaultProps = {
+  name: "Test",
+};
+
+MyComponent.protoTypes = {
+  name: PropTypes.string,
+  favoriteNumber: PropTypes.number.isRequired,
+  // isRequired를 사용하면 지정한 형태가 아니면 아예 안나타냄
+}
+export default MyComponent;
