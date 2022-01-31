@@ -28,8 +28,8 @@ const Hooks = () => {
                 value={nickName}
                 onChange={onChangeNickName} />
 
-            <p>이름: {name}</p>
-            <p>닉네임: {nickName}</p>
+            <p>이름 {name}</p>
+            <p>닉네임 {nickName}</p>
 
         </div>
     )
